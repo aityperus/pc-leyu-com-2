@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leyu · 知识库入口介绍 · pc-leyu.com</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #f9fafb;
+            color: #1e2a3e;
+            font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            font-weight: 400;
+            padding: 2rem 1.2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .page {
+            max-width: 760px;
+            width: 100%;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+            padding: 2.8rem 2.4rem;
+        }
+        @media (max-width: 540px) {
+            body {
+                padding: 1rem 0.6rem;
+            }
+            .page {
+                padding: 2rem 1.2rem;
+                border-radius: 20px;
+            }
+        }
+        h1, h2, h3 {
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            line-height: 1.3;
+            color: #0b1826;
+        }
+        h1 {
+            font-size: 1.9rem;
+            margin-bottom: 0.2rem;
+            border-left: 4px solid #2c6fbb;
+            padding-left: 1.2rem;
+        }
+        .subhead {
+            color: #4b5b6e;
+            font-size: 0.95rem;
+            margin-bottom: 2.4rem;
+            margin-top: 0.6rem;
+            padding-left: 1.6rem;
+            border-bottom: 1px solid #e9edf2;
+            padding-bottom: 1.2rem;
+        }
+        section {
+            margin-bottom: 2.8rem;
+        }
+        h2 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #edf1f6;
+            padding-bottom: 0.3rem;
+        }
+        h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin: 1.2rem 0 0.4rem;
+        }
+        p {
+            margin-bottom: 0.9rem;
+            color: #233143;
+        }
+        .intro-box {
+            background: #f4f7fc;
+            padding: 1.4rem 1.6rem;
+            border-radius: 14px;
+            margin: 1.6rem 0 2rem;
+            border-left: 3px solid #2c6fbb;
+        }
+        .intro-box p {
+            margin-bottom: 0.3rem;
+        }
+        .grid-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.2rem;
+            margin-top: 1rem;
+        }
+        @media (max-width: 480px) {
+            .grid-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+        .card {
+            background: #fafbfd;
+            border-radius: 14px;
+            padding: 1.2rem 1.2rem 1.4rem;
+            border: 1px solid #e4e9f0;
+            transition: box-shadow 0.15s ease;
+        }
+        .card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+        }
+        .card h3 {
+            margin-top: 0;
+            margin-bottom: 0.3rem;
+            font-size: 1rem;
+        }
+        .card p {
+            font-size: 0.9rem;
+            color: #36485f;
+            margin-bottom: 0.2rem;
+        }
+        .tag {
+            display: inline-block;
+            background: #e1e8f0;
+            border-radius: 20px;
+            padding: 0.1rem 0.7rem;
+            font-size: 0.7rem;
+            color: #1d3a5c;
+            font-weight: 500;
+            margin-right: 0.3rem;
+        }
+        .notice-area {
+            background: #f1f4f8;
+            border-radius: 16px;
+            padding: 1.2rem 1.6rem;
+            margin: 2rem 0 1rem;
+            font-size: 0.9rem;
+            border: 1px dashed #b8c7db;
+        }
+        .notice-area p {
+            margin-bottom: 0.4rem;
+        }
+        .faq-item {
+            margin: 1rem 0;
+            padding-left: 0.6rem;
+            border-left: 2px solid #cbd7e6;
+        }
+        .faq-item strong {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.2rem;
+            color: #0b1a2a;
+        }
+        .faq-item p {
+            font-size: 0.9rem;
+            color: #2a3f57;
+            margin-bottom: 0.2rem;
+        }
+        .footnote {
+            font-size: 0.8rem;
+            color: #6b7f94;
+            border-top: 1px solid #e3e9f0;
+            padding-top: 1.6rem;
+            margin-top: 2.4rem;
+            text-align: left;
+        }
+        a {
+            color: #1c5a9c;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border 0.1s;
+            font-weight: 500;
+        }
+        a:hover {
+            border-bottom-color: #1c5a9c;
+        }
+        .nobreak {
+            white-space: nowrap;
+        }
+        .slim-note {
+            background: #f8faff;
+            padding: 0.6rem 1rem;
+            border-radius: 10px;
+            display: inline-block;
+            font-size: 0.82rem;
+            color: #1e3a5f;
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <h1>leyu · 知识库索引</h1>
+    <div class="subhead">对网站用途的快速识别：信息聚合 · 导航 · 说明</div>
+
+    <section>
+        <p>当你打开 <strong><a href="https://pc-leyu.com">leyu</a></strong> 时，看到的不是一个常规的落地页，而是一个以信息组织为主要目的的知识库式入口。本站围绕特定领域提供结构化的说明、相关参考与内容索引，帮助访问者快速建立对站点主题的理解。</p>
+        <p>整个页面设计遵循极简目录感：标题层级清晰、板块独立、信息密度较高，适合需要快速判断网站价值的访问场景。</p>
+    </section>
+
+    <div class="intro-box">
+        <p><span class="tag">用途速览</span> 本站并非产品推广或服务销售页面，而是以知识库入口的形式呈现：</p>
+        <p>· 聚合背景说明与场景介绍</p>
+        <p>· 提供模块化提示与补充信息</p>
+        <p>· 内嵌 FAQ 摘要与相关链接</p>
+        <p>· 以「leyu」作为核心标识，方便检索与引用</p>
+    </div>
+
+    <section>
+        <h2>内容板块与特点</h2>
+        <div class="grid-cards">
+            <div class="card">
+                <h3>说明区</h3>
+                <p>站点定位、使用场景及上下文简介。帮助首次访问者理解建站目标。</p>
+                <p><span class="tag">简洁</span><span class="tag">专业</span></p>
+            </div>
+            <div class="card">
+                <h3>提示区</h3>
+                <p>关键使用须知、浏览建议及信息可靠性说明，提升信息获取效率。</p>
+                <p><span class="tag">实用</span><span class="tag">聚焦</span></p>
+            </div>
+            <div class="card">
+                <h3>相关信息区</h3>
+                <p>围绕主题的扩展参考、常见问题摘要，以及指向更详细内容的入口。</p>
+                <p><span class="tag">知识库</span><span class="tag">参考</span></p>
+            </div>
+            <div class="card">
+                <h3>目录式布局</h3>
+                <p>窄正文宽度、清晰的标题层级与卡片分区，视觉留白充分，阅读节奏可控。</p>
+                <p><span class="tag">极简</span><span class="tag">响应式</span></p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>典型使用场景</h2>
+        <p>如果你想快速了解某个主题的背景或结构，<a href="https://pc-leyu.com">leyu</a> 可以作为信息组织的起点。适用于以下情形：</p>
+        <ul style="margin-left: 1.4rem; margin-bottom: 1rem; line-height: 1.8; color: #1e3048;">
+            <li>查阅站点用途说明与范围界定</li>
+            <li>浏览结构化的提示与注意事项</li>
+            <li>获取 FAQ 摘要与相关资源索引</li>
+            <li>作为知识库首页，快速导航深层页面</li>
+        </ul>
+        <p>页面内容保持中立克制，避免过度承诺，所有信息以可验证、可参考为原则。</p>
+    </section>
+
+    <div class="notice-area">
+        <p><strong>📘 提示区</strong></p>
+        <p>· 本站内容以知识组织为目的，不包含营销或诱导性表述。</p>
+        <p>· 所有链接及说明均指向 <strong>pc-leyu.com</strong> 域下的资源，请通过 <a href="https://pc-leyu.com">leyu</a> 直接访问。</p>
+        <p>· 建议使用桌面或平板设备浏览，以获得最佳的窄栏阅读体验。</p>
+        <p>· 页面结构会随内容方向变化，每次访问可能看到不同的板块组合。</p>
+    </div>
+
+    <section>
+        <h2>FAQ 摘要</h2>
+        <div class="faq-item">
+            <strong>这个网站主要提供什么？</strong>
+            <p>一个围绕特定主题的知识库入口，包含说明、提示、相关信息等模块。通过 <a href="https://pc-leyu.com">leyu</a> 可直达。</p>
+        </div>
+        <div class="faq-item">
+            <strong>内容和一般落地页有什么不同？</strong>
+            <p>本页采用目录感布局，信息密度较高，侧重快速传递网站用途，而非品牌营销。每个板块都保持独立可读。</p>
+        </div>
+        <div class="faq-item">
+            <strong>我如何引用或分享这个页面？</strong>
+            <p>直接使用 <a href="https://pc-leyu.com">leyu</a> 作为名称标识，或复制 URL 分享。无需额外描述。</p>
+        </div>
+    </section>
+
+    <section style="margin-bottom: 1.4rem;">
+        <h2>相关信息</h2>
+        <p>如果你需要更结构化的参考数据，可以关注站内后续发布的详版说明与分类索引。当前入口页以轻量、快速为导向，适合作为知识库的前置门户。</p>
+        <p>同时，页面的视觉风格与内容节奏会随迭代方向调整，保持差异化和新鲜感。</p>
+    </section>
+
+    <div class="footnote">
+        <span class="slim-note">pc-leyu.com · 知识库入口 · v1</span> —— 页面内容真实克制，仅用于信息说明。<br>
+        本页基于索引式结构设计，不包含任何诱导点击或违规表述。
+    </div>
+
+</div>
+</body>
+</html>
